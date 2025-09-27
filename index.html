@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Médica - Consulta de Turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda Médica</h1>
+            <p>Consulta tus turnos reservados</p>
+        </header>
+
+        <main>
+            <section class="login-section">
+                <h2>Acceso de Paciente</h2>
+                <form id="loginForm">
+                    <input type="text" id="dni" placeholder="DNI" required>
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                    <button type="submit">Consultar Turnos</button>
+                </form>
+            </section>
+
+            <section class="turnos-section" id="turnosSection" style="display: none;">
+                <h2>Mis Turnos</h2>
+                <div id="turnosList"></div>
+                <div class="actions">
+                    <button id="nuevoTurnoBtn">Reservar Nuevo Turno</button>
+                    <button id="backBtn">Volver</button>
+                </div>
+            </section>
+
+            <section class="nuevo-turno-section" id="nuevoTurnoSection" style="display: none;">
+                <h2>Reservar Nuevo Turno</h2>
+                <form id="nuevoTurnoForm">
+                    <select id="especialidad" required>
+                        <option value="">Seleccionar especialidad</option>
+                        <option value="Cardiología">Cardiología</option>
+                        <option value="Dermatología">Dermatología</option>
+                        <option value="Traumatología">Traumatología</option>
+                        <option value="Pediatría">Pediatría</option>
+                    </select>
+                    <select id="doctor" required>
+                        <option value="">Seleccionar doctor</option>
+                    </select>
+                    <input type="date" id="fecha" required>
+                    <select id="hora" required>
+                        <option value="">Seleccionar hora</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                    <button type="submit">Reservar Turno</button>
+                    <button type="button" id="cancelarNuevoBtn">Cancelar</button>
+                </form>
+            </section>
+
+            <section class="modificar-turno-section" id="modificarTurnoSection" style="display: none;">
+                <h2>Modificar Turno</h2>
+                <form id="modificarTurnoForm">
+                    <input type="hidden" id="turnoId">
+                    <input type="date" id="nuevaFecha" required>
+                    <select id="nuevaHora" required>
+                        <option value="">Seleccionar nueva hora</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                    <button type="submit">Confirmar Cambio</button>
+                    <button type="button" id="cancelarModificarBtn">Cancelar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

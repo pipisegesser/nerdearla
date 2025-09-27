@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c5aa0;
+    margin-bottom: 10px;
+}
+
+.login-section, .turnos-section, .nuevo-turno-section, .modificar-turno-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #2c5aa0;
+}
+
+#loginForm, #nuevoTurnoForm, #modificarTurnoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #2c5aa0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1e3f73;
+}
+
+.turno-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.turno-fecha {
+    font-weight: bold;
+    color: #2c5aa0;
+    margin-bottom: 5px;
+}
+
+.turno-doctor {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.turno-estado {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.estado-confirmado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.estado-pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#backBtn {
+    margin-top: 20px;
+    background-color: #6c757d;
+}
+
+#backBtn:hover {
+    background-color: #545b62;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.turno-actions {
+    margin-top: 10px;
+}
+
+.turno-actions button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.btn-modificar {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-modificar:hover {
+    background-color: #e0a800;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+}
+
+.btn-cancelar:hover {
+    background-color: #c82333;
+}
