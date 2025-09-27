@@ -1,3 +1,8 @@
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/845d4036-eb5d-4fb5-af1d-bc2247433c56" />
+
+
+
+
 # Agenda Médica
 
 Sistema web para gestión de turnos médicos que permite a los pacientes consultar, reservar y modificar sus citas médicas.
